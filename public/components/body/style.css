@@ -1,0 +1,214 @@
+.container-principal{
+    background-size: cover; 
+    background-image: url(../../assets/img.jpg );
+    background-attachment: fixed;     
+         
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000b7;
+    height: 60px;
+    color: #fff;
+    font-size: 25px;
+    position: fixed;   
+    width: 100%;
+    top: 0px;
+}
+.link-home{
+    padding: 10px;
+}
+.navbar-links{
+    padding: 10px;
+}
+.container{
+    background-color: #4b4747fb;
+    box-shadow: -30px -30px 45px #999;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.nome{
+    display: flex;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+    color: #000;
+    margin-top: 3.5rem;
+    
+    
+}
+.decricao-nome{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+.div-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.container-contato{
+    width: 25rem;    
+    display: flex;   
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.container-contato-itens{    
+    list-style-type: none;
+}
+.container-contato-item{
+    max-width: 3.5rem;    
+    font-size: 1.2rem;    
+    font-weight: 700;
+    color: #00a8ee;
+    margin-top: 2rem;
+    
+}
+.redes-sociais a{
+    text-decoration: none;
+    color: #fff;
+    margin: 2rem;       
+    
+}
+
+.bio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 30rem;
+    padding-left: 20px;
+    
+   
+    
+}
+.bio p{
+    margin: 1rem;
+    margin-bottom: 3rem;
+}
+.container-tecnologias{
+   
+    padding: 2rem;
+    margin-top: 5rem; 
+    margin-left: 5rem;
+    margin-right: 2rem;
+    
+}
+.tecnologias{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px;       
+}
+.icones-tecnologias{
+    display: flex;
+    justify-content: center;
+
+}
+.icone{
+    max-width: 100px;    
+}
+.container-funcionalidades{
+    margin-top: 3rem;
+    padding: 4rem;
+}
+.container-funcionalidades h2{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #4b4747fb;
+    box-shadow: -30px -30px 40px #999;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;     
+    font-size: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+    color: #fff;
+}
+.tempo-container{
+   
+    max-width: 25rem;    
+  
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+      
+        
+}
+.tempo-container-box{    
+    list-style-type: none;
+    padding: 0.5rem;
+    border-style: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-weight: 700;
+} 
+@media screen and (max-width:767px) {
+    .container-principal{
+        width: 100vw;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;      
+    }
+    .div-1{
+        display: flex;
+        flex-direction: column;
+    }
+    .bio{
+        width: 16rem;   
+        margin: 2rem;     
+    }
+    .container-contato{
+        width: 17rem;
+        margin: 2rem;
+
+    }
+    .container-tecnologias{
+        margin: 2rem;
+    }
+    .tecnologias{
+      padding: 0;  
+    }
+   
+    .icone{
+        max-width: 50px;
+
+    }
+    .icones-tecnologias{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 2px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:940px) {
+      .bio{
+          max-width: 20rem;                  
+      }    
+      .container-contato{
+          max-width: 20rem;
+      }
+      .tecnologias{
+          padding: 1rem;
+      }
+      .icone{         
+          width: 90px;
+      }
+}
