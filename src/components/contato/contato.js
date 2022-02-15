@@ -3,7 +3,7 @@ import styles from '../../../styles/Home.module.css';
 
 function Contato () {
     return(
-        <div className={styles.container}>
+        <div>
             
                 <h2>Contato</h2>          
             
