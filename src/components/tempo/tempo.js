@@ -41,7 +41,7 @@ import styles from '../../../styles/Home.module.css';
             return (
                 <Fragment>
                   
-                <table className={styles.tempo_container, styles.container}>
+                <table className={styles.container}>
                   <thead>
                        <h3 className={styles.tempo_container_box}>Clima na sua Região 
                        ({Weather['weather'][0]['description']})</h3>

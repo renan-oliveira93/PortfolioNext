@@ -2,7 +2,7 @@ import styles from '../../../styles/Home.module.css';
 
 function Bio () {
     return(
-        <div className={styles.bio, styles.container}>
+        <div className={styles.container}>
                <h2>Biografia</h2>
                <p>
                Elaborei projetos pessoais de Web design com finalidade
