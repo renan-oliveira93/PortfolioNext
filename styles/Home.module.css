@@ -119,8 +119,7 @@
 
 /*estilos tecnologias*/
 
-.container_tecnologias{
- 
+.container_tecnologias{ 
   padding: 2rem;
   margin-top: 5rem; 
   margin-left: 5rem;
@@ -133,6 +132,13 @@
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 40px;       
+}
+
+.icones_tecnologias{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 00.5rem;
 }
 
 .icone{
