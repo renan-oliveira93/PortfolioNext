@@ -11,7 +11,7 @@ import styles from '../../../styles/Home.module.css';
           params: {
             lat: lat,
             lon: long,
-            appid: "a9a5fc66b7e9e8f00c75f8a94262f17f",
+            appid: process.env.NEXT_PUBLIC_API_KEY,
             lang: 'pt',
             units: 'metric'
           }
