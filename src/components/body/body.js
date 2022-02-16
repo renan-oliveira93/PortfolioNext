@@ -1,20 +1,16 @@
 import NavBar from '../navbar/navbar';
+import Apresentacao from '../apresentacao/apresentacao';
 import Bio from '../bio/bio';
 import Tecnologias from '../tecnologias/tecnologias';
 import Contato from '../contato/contato';
 import Tempo from '../tempo/tempo';
+import Footer from '../footer/footer';
 import styles from '../../../styles/Home.module.css';
 
  function Body () {
    return(
-     <div >
-          
-          <h1 className={styles.title}>
-                Renan de Oliveira 
-          </h1>
-          <h2 className={styles.title_description}>
-                Desenvolvedor Front-End
-          </h2>           
+     <div >          
+               <Apresentacao/>
                <NavBar/> 
           <div className={styles.div_1}>
                <Bio/>
@@ -22,6 +18,7 @@ import styles from '../../../styles/Home.module.css';
           </div> 
                <Tecnologias/>
                <Tempo/>  
+               <Footer/>
      </div>
     )
 };
