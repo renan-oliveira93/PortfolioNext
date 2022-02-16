@@ -28,7 +28,7 @@ export default function Contato() {
                     < img  src='/assets/whats-app.png' width='50' height='50'  alt="icone whats-app"/> - Whatsapp</a>
                     
                     <a href="tel:11964885816" target="_blank" rel="noreferrer">
-                    < img  src='/assets/telefone.png' width='50' height='50' alt="icone telefone"/> - Telefone: (11) 9-6400-9557</a> 
+                    < img  src='/assets/telefone.png' width='50' height='50' alt="icone telefone"/> - Telefone: (11) 9-6488-5816</a> 
 
                 </div>                 
            
