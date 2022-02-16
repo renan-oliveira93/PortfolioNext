@@ -13,7 +13,7 @@ export default function ApiPage () {
             </Head>
             <NavBar/>
                 <div className={styles.container}>
-                    <h1 className={styles.titulo_pagina_api}>Página de consumo api</h1>                    
+                    <h1 className={styles.titulo_pagina_api}>Página de consumo de api</h1>                    
                 </div>            
             <Tempo/>
             <Footer/>
