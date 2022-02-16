@@ -8,7 +8,7 @@ export default function Home() {
     <div>
       <Head>
           <title>Portfólio | Home</title>
-          <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"></meta>
+          <meta http-Equiv="Content-Security-Policy" content="upgrade-insecure-requests"></meta>
       </Head>   
 
       <Body/>  
