@@ -4,7 +4,6 @@ import Bio from '../bio/bio';
 import Tecnologias from '../tecnologias/tecnologias';
 import Contato from '../contato/contato';
 import Tempo from '../tempo/tempo';
-import Footer from '../footer/footer';
 import styles from '../../../styles/Home.module.css';
 
  function Body () {
@@ -17,8 +16,7 @@ import styles from '../../../styles/Home.module.css';
                <Contato/>
           </div> 
                <Tecnologias/>
-               <Tempo/>  
-               <Footer/>
+                             
      </div>
     )
 };

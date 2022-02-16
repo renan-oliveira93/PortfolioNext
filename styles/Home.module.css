@@ -74,9 +74,15 @@
 
 .container_contato{
   width: 15rem; 
-  height: 10rem; 
+  height: 15rem;
   display: flex;
   justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container_contato a{
+  margin: 0.5rem;
 }
 
 /*estilos tecnologias*/
@@ -92,15 +98,15 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 40px;       
+  flex-wrap: wrap;     
 }
 
 .icones_tecnologias{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 00.5rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
 }
 
 .icone{
@@ -140,6 +146,7 @@
   background-color: #414c58;
   font-size: 1.5rem;
   color: #fff;
+  bottom:0;
 }
 
 .footer a {
@@ -161,66 +168,47 @@
   margin-top: 5rem;
 }
 
+.container_contatos{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 5rem;   
+}
+
+.container_contatos a{
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
 /*estilos pagina de api*/
 
 .titulo_pagina_api{
   margin-top: 5rem;
+  padding: 1rem;
+  text-align: center;
 }
 
-/*estilos responsivos*/
+/*estilos páginas de projetos*/
 
-/* @media screen and (max-width:767px) {
-  .container_principal{
-      width: 100vw;
-      display: flex;
-      flex-direction: column; 
-      justify-content: center;      
-  }
-  .div_1{
-      display: flex;
-      flex-direction: column;
-  }
-  .bio{
-      width: 16rem;   
-      margin: 2rem;     
-  }
-  .container_contato{
-      width: 17rem;
-      margin: 2rem;
-
-  }
-  .container_tecnologias{
-      margin: 2rem;
-  }
-  .tecnologias{
-    padding: 0;  
-  }
- 
-  .icone{
-      max-width: 50px;
-
-  }
-  .icones_tecnologias{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-between;
-      margin: 2px;
-  }
+.container_projetos{
+  margin: 3rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
 }
-@media screen and (min-width:768px) and (max-width:940px) {
-    .bio{
-        max-width: 20rem;                  
-    }    
-    .container_contato{
-        max-width: 20rem;
-    }
-    .tecnologias{
-        padding: 1rem;
-    }
-    .icone{         
-        width: 90px;
-    }
-}*/
+
+.container_projetos p{
+  font-size: 1.5rem;
+}
+
+.container_projetos a{
+  margin: 1rem;
+  color: #0099ff;
+}
+
+.titulo_projetos{
+  margin-top: 5rem;
+}
+
 
 
