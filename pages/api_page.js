@@ -9,7 +9,7 @@ export default function ApiPage () {
     return(
         <div>
             <Head>
-                <title>Portfólio | Página de API</title>
+                <title>Portfólio | API</title>
             </Head>
             <NavBar/>
                 <div className={styles.container}>

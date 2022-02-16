@@ -8,7 +8,7 @@ export default function Projetos () {
     return(
         <div>
             <Head>
-                <title>Portfólio | Página de projetos</title>
+                <title>Portfólio | Projetos</title>
             </Head>
             <NavBar/>
                 <div className={styles.container}>

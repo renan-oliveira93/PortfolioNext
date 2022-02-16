@@ -8,7 +8,7 @@ export default function Chat () {
     return(
         <div>
             <Head>
-                <title>Portfólio | Página do Chat</title>
+                <title>Portfólio | Chat</title>
             </Head>
             <NavBar/>
             <h1 className={styles.titulo_chat}>Página do chat</h1>
