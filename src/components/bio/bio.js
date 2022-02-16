@@ -3,7 +3,8 @@ import styles from '../../../styles/Home.module.css';
 function Bio () {
     return(
         <div className={styles.container}>
-               <h2>Biografia</h2>
+              <div className={styles.bio}>
+              <h2>Biografia</h2>
                <p>
                Elaborei projetos pessoais de Web design com finalidade
                de estudo. Atualmente busco uma oportunidade para iniciar
@@ -18,6 +19,8 @@ function Bio () {
                desafios lógicos, descobri a paixão pelo desenvolvimento e
                programação.
                </p>
+              </div>
+               
            </div>
     )
 };

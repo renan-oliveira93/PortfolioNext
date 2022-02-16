@@ -3,7 +3,7 @@ import styles from '../../../styles/Home.module.css';
  function Tecnologias () {
    return(       
          <div className={styles.container_tecnologias, styles.container}>
-                    <h2>Tecnologias</h2>
+                    <h2 className={styles.container_tecnologias}>Tecnologias</h2>
              <div className={styles.tecnologias}>
                 <div className={styles.icones_tecnologias}>
                    <h3>javascript</h3>

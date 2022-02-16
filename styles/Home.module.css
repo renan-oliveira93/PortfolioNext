@@ -3,15 +3,10 @@
 .container{
   background-color: #4b4747fb;
   box-shadow: -30px -30px 45px #999;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  border-radius: 10px; 
   color: #fff;
   padding: 0 2rem;
-  margin: 3rem;
-  width: fit-content;
-  
+  margin: 3rem;    
 }
 
 .div_1{
@@ -86,35 +81,15 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   padding-left: 20px; 
-  max-width: 20rem;
+  max-width: 30rem;
 }
 
 /*estilos do contato*/
 
 .container_contato{
-  width: 25rem;    
-  display: flex;   
-  flex-direction: column;
-  align-items: center;  
-}
-
-.container_contato_itens{    
-  list-style-type: none;
-}
-
-.container_contato_item{
-  max-width: 3.5rem;    
-  font-size: 1.2rem;    
-  font-weight: 700;
-  color: #00a8ee;
-  margin-top: 2rem;
-  
-}
-.redes_sociais a{
-  text-decoration: none;
-  color: #fff;
-  margin: 2rem;       
-  
+  width: 15rem;  
+  display: flex;
+  justify-content: space-around;
 }
 
 /*estilos tecnologias*/
@@ -122,7 +97,7 @@
 .container_tecnologias{ 
   padding: 2rem;
   margin-top: 5rem; 
-  margin-left: 5rem;
+  margin-left: 2rem;
   margin-right: 2rem;
 }
 
