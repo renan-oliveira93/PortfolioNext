@@ -1,15 +1,15 @@
 /*estilizações gerais*/
 
-.container{
+.container {
   background-color: #4b4747fb;
   box-shadow: -30px -30px 45px #999;
-  border-radius: 10px; 
+  border-radius: 10px;
   color: #fff;
   padding: 0 2rem;
-  margin: 3rem;    
+  margin: 3rem;
 }
 
-.div_1{
+.div_1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -17,7 +17,7 @@
 
 /*estilos do navbar*/
 
-.navbar{
+.navbar {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -26,30 +26,30 @@
   height: 60px;
   color: #fff;
   font-size: 25px;
-  position: fixed;   
+  position: fixed;
   width: 100%;
   top: 0px;
 }
 
-.link_home{
+.link_home {
   padding: 10px;
 }
 
-.navbar_links{
+.navbar_links {
   padding: 10px;
 }
 
 /*estilos da apresentacao*/
 
-.apresentacao{
+.apresentacao {
   margin-top: 5rem;
 }
 
-.title { 
+.title {
   font-size: 4rem;
 }
 
-.title_description { 
+.title_description {
   font-size: 2rem;
 }
 
@@ -62,18 +62,18 @@
 
 /*estilos da bio*/
 
-.bio{
+.bio {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  padding-left: 20px; 
+  padding-left: 20px;
   max-width: 30rem;
 }
 
 /*estilos do contato*/
 
-.container_contato{
-  width: 15rem; 
+.container_contato {
+  width: 15rem;
   height: 15rem;
   display: flex;
   justify-content: space-around;
@@ -81,27 +81,27 @@
   flex-wrap: wrap;
 }
 
-.container_contato a{
+.container_contato a {
   margin: 0.5rem;
 }
 
 /*estilos tecnologias*/
 
-.container_tecnologias{ 
+.container_tecnologias {
   padding: 2rem;
-  margin-top: 5rem; 
+  margin-top: 5rem;
   margin-left: 2rem;
   margin-right: 2rem;
 }
 
-.tecnologias{
+.tecnologias {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  flex-wrap: wrap;     
+  flex-wrap: wrap;
 }
 
-.icones_tecnologias{
+.icones_tecnologias {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,29 +109,29 @@
   margin: 0.5rem;
 }
 
-.icone{
-  max-width: 100px;    
+.icone {
+  max-width: 100px;
 }
 
 /*estilos tempo*/
 
-.tempo_container{ 
-  max-width: 25rem; 
+.tempo_container {
+  max-width: 25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;      
+  align-items: center;
 }
 
-.tempo_container_box{    
+.tempo_container_box {
   padding: 0.5rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;  
+  justify-content: space-between;
   font-weight: 700;
   border: 2px solid #000;
   border-spacing: 0.3rem;
-} 
+}
 
 
 /*estilos rodapé*/
@@ -146,7 +146,7 @@
   background-color: #414c58;
   font-size: 1.5rem;
   color: #fff;
-  bottom:0;
+  bottom: 0;
 }
 
 .footer a {
@@ -158,31 +158,31 @@
 
 /*estilos do chat*/
 
-.titulo_chat{
+.titulo_chat {
   margin-top: 5rem;
 }
 
 /*estilos pagina de contato*/
 
-.titulo_contato{
+.titulo_contato {
   margin-top: 5rem;
 }
 
-.container_contatos{
-  display:flex;
+.container_contatos {
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 5rem;   
+  margin-top: 5rem;
 }
 
-.container_contatos a{
+.container_contatos a {
   margin: 1rem;
   font-size: 1.5rem;
 }
 
 /*estilos pagina de api*/
 
-.titulo_pagina_api{
+.titulo_pagina_api {
   margin-top: 5rem;
   padding: 1rem;
   text-align: center;
@@ -190,72 +190,102 @@
 
 /*estilos páginas de projetos*/
 
-.container_projetos{
+.container_projetos {
   margin: 3rem;
   padding: 1rem;
   display: flex;
   flex-direction: column;
 }
 
-.container_projetos p{
+.container_projetos p {
   font-size: 1.5rem;
 }
 
-.container_projetos a{
+.container_projetos a {
   margin: 1rem;
   color: #0099ff;
 }
 
-.titulo_projetos{
+.titulo_projetos {
   margin-top: 5rem;
 }
 
 /*estilizações de responsividade*/
 
 @media screen and (max-width:640px) {
-  .apresentacao{
+  .menu_mobile img {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .drawer {
+    background-color: #4b4747fb;
+    box-shadow: -30px -30px 45px #999;
+    color: #fff;
+    height: 100vh;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .apresentacao {
     margin: 1rem;
     margin-top: 3rem;
   }
-  .container{
+
+  .container {
     max-width: 100vw;
     margin: 1rem;
     padding: 1rem;
   }
-  .div_1{
+
+  .div_1 {
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
   }
-  
-  .container_contato{
+
+  .container_contato {
     display: flex;
     align-items: center;
     margin: 3rem;
   }
-  .container_tecnologias{
+
+  .container_tecnologias {
     margin: 2rem;
   }
-  .tecnologias{
+
+  .tecnologias {
     margin: 2rem;
   }
-  .footer{
+
+  .footer {
     width: 100vw;
     padding: 1rem;
   }
-  .container_contatos a{
+
+  .container_contatos a {
     margin: 2rem;
     font-size: 1.2rem;
   }
-  .container_projetos{
+
+  .container_projetos {
     margin: 1rem;
   }
-  .container_projetos a{
+
+  .container_projetos a {
     font-size: 1.3em;
   }
-  .titulo_pagina_api{
-    margin-top: 2rem; 
-    margin-bottom: 2rem;          
+
+  .titulo_pagina_api {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
 }
 
+@media screen and (min-width: 641px) {
+  .menu_mobile {
+    display: none;
+  }
+}
