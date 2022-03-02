@@ -41,7 +41,7 @@ function Tempo() {
     return (
       <Fragment>
 
-        <table className={styles.container}>
+        <table className={styles.container_tempo}>
           <thead>
             <h3 className={styles.tempo_container_box}>Clima na sua Região
               ({Weather['weather'][0]['description']})</h3>
