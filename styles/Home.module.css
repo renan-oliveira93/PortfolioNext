@@ -113,10 +113,21 @@
   max-width: 100px;
 }
 
+/*estilos da página api*/
+
+.apis {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
+  padding: auto;
+}
+
 /*estilos tempo*/
 
 .tempo_container {
   max-width: 25rem;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -216,6 +227,31 @@
   margin-top: 5rem;
 }
 
+/*estilos Cotações de moedas*/
+
+.container_moedas {
+  background-color: #011802;
+  color: #fff;
+  margin: auto;
+  width: max-content;
+  border-radius: 2%;
+  box-shadow: -25px -25px 0px 5px rgba(0, 0, 0, 0.23);
+}
+
+.thead_moedas th {
+  border-bottom: 2px solid #fff;
+}
+
+.tbody_moedas td {
+  border-bottom: 2px solid #fff;
+}
+
+.apis {
+  display: flex;
+  justify-content: center;
+}
+
+
 /*estilizações de responsividade*/
 
 @media screen and (max-width:640px) {
@@ -277,6 +313,11 @@
     padding: 0%;
   }
 
+  .apis {
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .container_tempo {
     margin: auto;
     margin-top: 2rem;
@@ -302,10 +343,24 @@
     margin-bottom: 2rem;
   }
 
+  .container_moedas {
+    max-width: 100vw;
+  }
+
+}
+
+@media screen and (min-width: 641px) and (max-width:790px) {
+  .container_moedas {
+    margin-left: 3rem;
+  }
 }
 
 @media screen and (min-width: 641px) {
   .menu_mobile {
     display: none;
+  }
+
+  .apis {
+    margin-left: 5rem;
   }
 }

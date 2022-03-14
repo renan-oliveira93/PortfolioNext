@@ -4,6 +4,7 @@ import Tempo from "../src/components/tempo/tempo";
 import Head from "next/head";
 import Footer from "../src/components/footer/footer";
 import MenuMobile from "../src/components/menu_mobile/menu_mobile";
+import Moedas from "../src/components/moedas/moedas";
 
 
 export default function ApiPage() {
@@ -17,7 +18,10 @@ export default function ApiPage() {
             <div className={styles.container}>
                 <h1 className={styles.titulo_pagina_api}>Página de consumo de api</h1>
             </div>
-            <Tempo />
+            <div className={styles.apis}>
+                <Tempo />
+                <Moedas />
+            </div>
             <Footer />
         </div>
     )
