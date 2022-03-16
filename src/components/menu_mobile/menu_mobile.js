@@ -6,6 +6,7 @@ import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import styles from '../../../styles/Home.module.css';
 import Link from 'next/link';
+import MenuIcon from '../../../public/assets/menuIcon.png'
 
 export default function MenuMobile() {
     const [state, setState] = React.useState({
@@ -54,8 +55,8 @@ export default function MenuMobile() {
             </List>
             <Divider />
             <List>
-                <Link href='/chat'>
-                    <a className={styles.navbar_links}></a>
+                <Link href='/crud'>
+                    <a className={styles.navbar_links}>CRUD</a>
                 </Link>
             </List>
         </Box>
@@ -65,7 +66,7 @@ export default function MenuMobile() {
         <div className={styles.menu_mobile}>
             {['left'].map((anchor) => (
                 <React.Fragment key={anchor}>
-                    <Button onClick={toggleDrawer(anchor, true)}><img src='/assets/menuIcon.png' /></Button>
+                    <Button onClick={toggleDrawer(anchor, true)}><MenuIcon /></Button>
                     <Drawer
                         width='auto'
                         heigth='auto'

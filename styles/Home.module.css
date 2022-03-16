@@ -199,25 +199,6 @@
   background-color: #eaeaea;
 }
 
-.crud_table_mobile {
-  border: solid 2px #0099ff;
-  border-radius: 10px;
-  background-color: #eaeaea;
-}
-
-.crud_table_mobile li {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 0;
-}
-
-.crud_table_mobile p {
-  margin: 1rem;
-  font-weight: 500;
-}
-
 /*estilos rodapé*/
 
 .footer {
@@ -416,6 +397,27 @@
   .crud_table {
     display: none;
   }
+
+
+  .crud_table_mobile {
+    border: solid 2px #0099ff;
+    border-radius: 10px;
+    background-color: #eaeaea;
+  }
+
+  .crud_table_mobile li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+  }
+
+  .crud_table_mobile p {
+    margin: 1rem;
+    font-weight: 500;
+  }
+
 
 }
 

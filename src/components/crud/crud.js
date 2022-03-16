@@ -40,6 +40,7 @@ export default function CrudUsuarios() {
     }
 
     /*malipulação das variáveis*/
+
     const handleChangeName = (text) => {
         setName(text);
         console.log(name);
@@ -54,6 +55,7 @@ export default function CrudUsuarios() {
     }
 
     /*manipulação de ações*/
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (!validForm()) return
@@ -93,6 +95,8 @@ export default function CrudUsuarios() {
 
     };
 
+    /*busca no banco de dados*/
+
     const handleShowUpdate = (usuario) => {
         setId(usuario._id);
         setName(usuario.name);
@@ -130,40 +134,40 @@ export default function CrudUsuarios() {
                         <Input value={telefone} aria-describedby="my-helper-text" />
                     </FormControl>
                     <Button type="submit" variant="outlined"><a>{id ? 'Atualizar' : 'Adicionar'}</a></Button>
-
                 </Box>
-
             </div>
 
-            <TableContainer className={styles.crud_table} component={Paper}>
-                <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
-                    <TableHead>
-                        <TableRow>
-                            <TableCell>Nome</TableCell>
-                            <TableCell >Email</TableCell>
-                            <TableCell >Telefone</TableCell>
-                            <TableCell >Ações</TableCell>
-                        </TableRow>
-                    </TableHead>
-                    <TableBody>
-                        {usuarios.map(usuario => (
-                            <TableRow key={usuario.email}
-
-                                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                            >
-
-                                <TableCell >{usuario.name}</TableCell>
-                                <TableCell >{usuario.email}</TableCell>
-                                <TableCell >{usuario.telefone}</TableCell>
-                                <TableCell >
-                                    <Button onClick={() => handleShowUpdate(usuario)} variant="outlined" >Editar</Button>
-                                    <Button onClick={() => handleDelete(usuario._id)} variant="outlined" color="error">Excluir</Button>
-                                </TableCell>
+            <div className={styles.crud_table_bg}>
+                <TableContainer className={styles.crud_table} component={Paper}>
+                    <Table >
+                        <TableHead>
+                            <TableRow>
+                                <TableCell>Nome</TableCell>
+                                <TableCell >Email</TableCell>
+                                <TableCell >Telefone</TableCell>
+                                <TableCell >Ações</TableCell>
                             </TableRow>
-                        ))}
-                    </TableBody>
-                </Table>
-            </TableContainer>
+                        </TableHead>
+                        <TableBody>
+                            {usuarios.map(usuario => (
+                                <TableRow key={usuario.email}
+
+                                    sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                                >
+
+                                    <TableCell >{usuario.name}</TableCell>
+                                    <TableCell >{usuario.email}</TableCell>
+                                    <TableCell >{usuario.telefone}</TableCell>
+                                    <TableCell >
+                                        <Button onClick={() => handleShowUpdate(usuario)} variant="outlined" >Editar</Button>
+                                        <Button onClick={() => handleDelete(usuario._id)} variant="outlined" color="error">Excluir</Button>
+                                    </TableCell>
+                                </TableRow>
+                            ))}
+                        </TableBody>
+                    </Table>
+                </TableContainer>
+            </div>
             <div className={styles.crud_table_mobile}>
                 {usuarios.map(usuario => (
                     <ul key={usuario.email}>
