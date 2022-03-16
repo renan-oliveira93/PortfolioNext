@@ -1,4 +1,4 @@
-import Feedback from "../../../src/models/Feedbacks";
+import Feedback from "../models/Feedbacks";
 import dbFeedbackConnect from "../../../src/sevices/db_feedback";
 
 dbFeedbackConnect();
