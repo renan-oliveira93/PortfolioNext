@@ -6,7 +6,7 @@ async function dbFeedbackConnect() {
     if (connection.isConnected) {
         return
     }
-    const db = await mongoose.connect('mongodb+srv://renan_oliveira93:oLIVEIRa93@cluster0.t91c1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
+    const db = await mongoose.connect(process.env.NEXT_PUBLIC_MONGO_URI_FEEDBACK, {
         useNewUrlParser: true,
         useUnifiedTopology: true
     })
