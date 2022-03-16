@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose'
 
 const connection = {}
 
@@ -14,4 +14,4 @@ async function dbFeedbackConnect() {
     connection.isConnected = db.conections[0].readyState
 }
 
-export default dbFeedbackConnect;   
+export default dbFeedbackConnect   

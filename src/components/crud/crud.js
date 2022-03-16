@@ -58,7 +58,7 @@ export default function CrudUsuarios() {
         e.preventDefault();
         if (!validForm()) return
         try {
-            const { data } = await axios.post('/api/usuarios', { name, email, telefone })
+            const { data } = await axios.post('../api/usuarios', { name, email, telefone })
             setUsuarios(usuarios.concat(data.data))
             setName('')
             setEmail('')
@@ -70,7 +70,7 @@ export default function CrudUsuarios() {
 
     const handleDelete = async (_id) => {
         try {
-            await axios.delete(`/api/usuarios/${_id}`)
+            await axios.delete(`../api/usuarios/${_id}`)
             setUsuarios(usuarios.filter(usuario => usuario._id !== _id));
         } catch (error) {
             console.log(error)
@@ -81,7 +81,7 @@ export default function CrudUsuarios() {
         e.preventDefault();
         if (!validForm()) return
         try {
-            await axios.put(`/api/usuarios/${id}`, { name, email, telefone })
+            await axios.put(`../api/usuarios/${id}`, { name, email, telefone })
             setUsuarios(usuarios.map(usuario => usuario._id === id ? { name, email, telefone, _id: id } : usuario))
             setName('')
             setEmail('')
@@ -101,7 +101,7 @@ export default function CrudUsuarios() {
     }
 
     useEffect(() => {
-        axios.get('/api/usuarios').then(({ data }) => {
+        axios.get('../api/usuarios').then(({ data }) => {
             setUsuarios(data.data)
         })
     }, [])
