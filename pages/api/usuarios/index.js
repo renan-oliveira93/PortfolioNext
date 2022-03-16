@@ -1,4 +1,4 @@
-import Usuario from "../../../src/models/Usuarios";
+import Usuario from "../models/Usuarios";
 import dbConnect from "../../../src/sevices/db";
 
 dbConnect();
