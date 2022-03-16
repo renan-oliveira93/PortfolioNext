@@ -5,7 +5,7 @@ dbFeedbackConnect();
 
 export default async function handler(req, res) {
     const { method } = req
-    const { feedbackID } = req.query
+    const { FeedbackID } = req.query
 
     switch (method) {
         case 'PUT':
@@ -13,7 +13,7 @@ export default async function handler(req, res) {
                 const { name, feedback } = req.body
                 if (!name && !feedback) throw 'invalid data'
 
-                await Feedback.updateOne({ _id: feedbackID }, { name, feedback })
+                await Feedback.updateOne({ _id: FeedbackID }, { name, feedback })
                 res.status(200).json({ success: true })
             } catch (error) {
                 console.log(error);
@@ -22,7 +22,7 @@ export default async function handler(req, res) {
             break;
         case 'DELETE':
             try {
-                await Feedback.deleteOne({ _id: feedbackID })
+                await Feedback.deleteOne({ _id: FeedbackID })
 
                 res.status(201).json({ success: true })
 
