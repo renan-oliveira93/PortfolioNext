@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const connection = {};
+const connection = {}
 
 async function dbFeedbackConnect() {
     if (connection.isConnected) {
