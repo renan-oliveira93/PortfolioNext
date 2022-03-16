@@ -2,17 +2,17 @@ import React from 'react';
 import styles from '../../../styles/Home.module.css';
 import Link from 'next/link';
 
- function NavBar () {
-   return(
+function NavBar() {
+    return (
         <div className={styles.navbar}>
-            
-           <div>
-               <Link href='./'>
-                   <a className={styles.link_home}>HOME</a>
-               </Link>              
-           </div>
 
-           <div>
+            <div>
+                <Link href='./'>
+                    <a className={styles.link_home}>HOME</a>
+                </Link>
+            </div>
+
+            <div>
                 <Link href='/projetos'>
                     <a className={styles.navbar_links}>PROJETOS</a>
                 </Link>
@@ -24,12 +24,12 @@ import Link from 'next/link';
                 <Link href='/api_page'>
                     <a className={styles.navbar_links}>API</a>
                 </Link>
-                
-                <Link href='/chat'>
-                    <a className={styles.navbar_links}></a>
-                </Link>               
-                               
-           </div>
+
+                <Link href='/crud'>
+                    <a className={styles.navbar_links}>CRUD</a>
+                </Link>
+
+            </div>
         </div>
     )
 };
