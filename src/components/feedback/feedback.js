@@ -82,7 +82,7 @@ export default function FeedbackField() {
         <div className={styles.crud}>
 
             <h1>Feedbacks</h1>
-            <p>Viu algo possa acrescentar? Deixe um feedback, com certeza ira contribuir muito com o crescimento da minha carreira.</p>
+            <p>Viu algo possa acrescentar? Deixe um feedback, com certeza contribuirá muito com meu crescimento profissional.</p>
 
             <div className={styles.crud_form}>
                 <Box as="form" className={styles.crud_submit} onSubmit={id ? handleUpdate : handleSubmit}>
