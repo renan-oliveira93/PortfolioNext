@@ -2,11 +2,11 @@
 
 .container {
   background-color: #4b4747fb;
-  box-shadow: -30px -30px 45px #999;
+  box-shadow: -30px -30px 65px #999;
   border-radius: 10px;
   color: #fff;
   padding: 0 2rem;
-  margin: 3rem;
+  margin: 1rem;
 }
 
 .div_1 {
@@ -42,7 +42,7 @@
 /*estilos da apresentacao*/
 
 .apresentacao {
-  margin-top: 5rem;
+  margin-top: 3.5rem;
 }
 
 .title {
@@ -147,6 +147,8 @@
 }
 
 .container_tempo {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
   border-radius: 2%;
   background-color: #62abbde5;
   box-shadow: -25px -25px 0px 5px rgba(0, 0, 0, 0.23);
@@ -184,7 +186,7 @@
 }
 
 .crud_form {
-  border: solid 2px #0099ff;
+  border: solid 2px #c1cbd3;
   border-radius: 10px;
 }
 
@@ -193,7 +195,7 @@
 }
 
 .crud_table {
-  border: solid 2px #0099ff;
+  border: solid 2px #c1cbd3;
   border-radius: 10px;
   margin-top: 5rem;
   background-color: #eaeaea;
@@ -275,6 +277,8 @@
   background-color: #011802;
   color: #fff;
   margin: auto;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
   width: max-content;
   border-radius: 2%;
   box-shadow: -25px -25px 0px 5px rgba(0, 0, 0, 0.23);
@@ -398,7 +402,6 @@
     display: none;
   }
 
-
   .crud_table_mobile {
     border: solid 2px #0099ff;
     border-radius: 10px;
@@ -417,8 +420,6 @@
     margin: 1rem;
     font-weight: 500;
   }
-
-
 }
 
 @media screen and (min-width: 641px) and (max-width:790px) {
@@ -438,5 +439,9 @@
 
   .apis {
     margin-left: 5rem;
+  }
+
+  .tecnologias_component {
+    display: none;
   }
 }

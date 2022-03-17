@@ -17,7 +17,6 @@ function Body() {
                     <Contato />
                </div>
                <Tecnologias />
-
           </div>
      )
 };
