@@ -174,8 +174,8 @@ export default function CrudUsuarios() {
                         <li><p>Nome:</p>{usuario.name}</li>
                         <li><p>Email:</p>{usuario.email}</li>
                         <li><p>Telefone:</p>{usuario.telefone}</li>
-                        <li><Button onClick={() => handleShowUpdate(usuario)} variant="outlined" >Editar</Button>
-                            <Button onClick={() => handleDelete(usuario._id)} variant="outlined" color="error">Excluir</Button>
+                        <li><Button sx={{ m: 2 }} onClick={() => handleShowUpdate(usuario)} variant="outlined" >Editar</Button>
+                            <Button sx={{ m: 2 }} onClick={() => handleDelete(usuario._id)} variant="outlined" color="error">Excluir</Button>
                         </li>
                     </ul>
                 ))}

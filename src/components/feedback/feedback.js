@@ -86,17 +86,17 @@ export default function FeedbackField() {
 
             <div className={styles.crud_form}>
                 <Box as="form" className={styles.crud_submit} onSubmit={id ? handleUpdate : handleSubmit}>
-                    <FormControl className={styles.crud_input}
+                    <FormControl sx={{ m: 2 }} className={styles.crud_input}
                         onChange={e => handleChangeName(e.target.value)}>
                         <InputLabel htmlFor="my-input">Nome</InputLabel>
                         <Input value={name} aria-describedby="my-helper-text" />
                     </FormControl>
-                    <FormControl className={styles.crud_input}
+                    <FormControl sx={{ m: 2 }} className={styles.crud_input}
                         onChange={e => handleChangeFeedback(e.target.value)}>
                         <InputLabel htmlFor="my-input">Feedback</InputLabel>
                         <Input value={feedback} aria-describedby="my-helper-text" />
                     </FormControl>
-                    <Button type="submit" variant="outlined"><a>{id ? 'Atualizar' : 'Adicionar'}</a></Button>
+                    <Button sx={{ m: 4 }} type="submit" variant="outlined"><a>{id ? 'Atualizar' : 'Adicionar'}</a></Button>
 
                 </Box>
 
@@ -121,8 +121,8 @@ export default function FeedbackField() {
                                 <TableCell >{row.name}</TableCell>
                                 <TableCell >{row.feedback}</TableCell>
                                 <TableCell >
-                                    <Button onClick={() => handleShowUpdate(row)} variant="outlined" >Editar</Button>
-                                    <Button onClick={() => handleDelete(row._id)} variant="outlined" color="error">Excluir</Button>
+                                    <Button sx={{ m: 2 }} onClick={() => handleShowUpdate(row)} variant="outlined" >Editar</Button>
+                                    <Button sx={{ m: 2 }} onClick={() => handleDelete(row._id)} variant="outlined" color="error">Excluir</Button>
                                 </TableCell>
                             </TableRow>
                         ))}
@@ -135,8 +135,8 @@ export default function FeedbackField() {
                     <ul key={row.email}>
                         <li><p>Nome:</p>{row.name}</li>
                         <li><p>Feedback:</p>{row.feedback}</li>
-                        <li><Button onClick={() => handleShowUpdate(row)} variant="outlined" >Editar</Button>
-                            <Button onClick={() => handleDelete(row._id)} variant="outlined" color="error">Excluir</Button>
+                        <li><Button sx={{ m: 2 }} onClick={() => handleShowUpdate(row)} variant="outlined" >Editar</Button>
+                            <Button sx={{ m: 2 }} onClick={() => handleDelete(row._id)} variant="outlined" color="error">Excluir</Button>
                         </li>
                     </ul>
                 ))}
