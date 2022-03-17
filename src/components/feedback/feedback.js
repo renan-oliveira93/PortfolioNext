@@ -102,7 +102,7 @@ export default function FeedbackField() {
 
             </div>
 
-            <TableContainer className={styles.crud_table} component={Paper}>
+            <TableContainer className={styles.crud_table}>
                 <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
                     <TableHead>
                         <TableRow>
