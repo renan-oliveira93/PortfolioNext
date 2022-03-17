@@ -138,7 +138,7 @@ export default function CrudUsuarios() {
             </div>
 
             <div className={styles.crud_table_bg}>
-                <TableContainer className={styles.crud_table} component={Paper}>
+                <TableContainer className={styles.crud_table}>
                     <Table >
                         <TableHead>
                             <TableRow>
