@@ -6,7 +6,6 @@ import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import styles from '../../../styles/Home.module.css';
 import Link from 'next/link';
-import MenuIcon from '../../../public/assets/menuIcon.png'
 
 export default function MenuMobile() {
     const [state, setState] = React.useState({
@@ -66,7 +65,7 @@ export default function MenuMobile() {
         <div className={styles.menu_mobile}>
             {['left'].map((anchor) => (
                 <React.Fragment key={anchor}>
-                    <Button onClick={toggleDrawer(anchor, true)}><MenuIcon /></Button>
+                    <Button onClick={toggleDrawer(anchor, true)}><img src='/assets/menuIcon.png' /></Button>
                     <Drawer
                         width='auto'
                         heigth='auto'
