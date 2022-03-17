@@ -118,22 +118,22 @@ export default function CrudUsuarios() {
 
             <div className={styles.crud_form}>
                 <Box as="form" className={styles.crud_submit} onSubmit={id ? handleUpdate : handleSubmit}>
-                    <FormControl className={styles.crud_input}
+                    <FormControl sx={{ m: 2 }} className={styles.crud_input}
                         onChange={e => handleChangeName(e.target.value)}>
                         <InputLabel htmlFor="my-input">Nome</InputLabel>
                         <Input value={name} aria-describedby="my-helper-text" />
                     </FormControl>
-                    <FormControl className={styles.crud_input}
+                    <FormControl sx={{ m: 2 }} className={styles.crud_input}
                         onChange={e => handleChangeEmail(e.target.value)}>
                         <InputLabel htmlFor="my-input">Email</InputLabel>
                         <Input value={email} aria-describedby="my-helper-text" />
                     </FormControl>
-                    <FormControl className={styles.crud_input}
+                    <FormControl sx={{ m: 2 }} className={styles.crud_input}
                         onChange={e => handleChangeTelefone(e.target.value)}>
                         <InputLabel htmlFor="my-input">Telefone</InputLabel>
                         <Input value={telefone} aria-describedby="my-helper-text" />
                     </FormControl>
-                    <Button type="submit" variant="outlined"><a>{id ? 'Atualizar' : 'Adicionar'}</a></Button>
+                    <Button sx={{ m: 4 }} type="submit" variant="outlined"><a>{id ? 'Atualizar' : 'Adicionar'}</a></Button>
                 </Box>
             </div>
 
@@ -152,15 +152,15 @@ export default function CrudUsuarios() {
                             {usuarios.map(usuario => (
                                 <TableRow key={usuario.email}
 
-                                    sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                                    sx={{ '&:last-child td, &:last-child th': { border: 0, m: 2 } }}
                                 >
 
                                     <TableCell >{usuario.name}</TableCell>
                                     <TableCell >{usuario.email}</TableCell>
                                     <TableCell >{usuario.telefone}</TableCell>
                                     <TableCell >
-                                        <Button onClick={() => handleShowUpdate(usuario)} variant="outlined" >Editar</Button>
-                                        <Button onClick={() => handleDelete(usuario._id)} variant="outlined" color="error">Excluir</Button>
+                                        <Button onClick={() => handleShowUpdate(usuario)} variant="outlined" sx={{ m: 2 }}>Editar</Button>
+                                        <Button onClick={() => handleDelete(usuario._id)} variant="outlined" color="error" sx={{ m: 2 }}>Excluir</Button>
                                     </TableCell>
                                 </TableRow>
                             ))}
