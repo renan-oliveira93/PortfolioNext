@@ -13,8 +13,8 @@ export default async function handler(req, res) {
                 const { name, email, telefone } = req.body
                 if (!name && !email && !telefone) throw 'invalid data'
 
-                await Usuario.updateOne({ _id: UsuarioID }, { name, email, telefone })
-                res.status(200).json({ success: true })
+                const usuario = await Usuario.updateOne({ _id: UsuarioID }, { name, email, telefone })
+                res.status(200).json({ success: true, data: usuario })
             } catch (error) {
                 console.log(error);
                 res.status(500).json({ success: false, err })
@@ -22,9 +22,9 @@ export default async function handler(req, res) {
             break;
         case 'DELETE':
             try {
-                await Usuario.deleteOne({ _id: UsuarioID })
+                const usuario = await Usuario.deleteOne({ _id: UsuarioID })
 
-                res.status(201).json({ success: true })
+                res.status(201).json({ success: true, data: usuario })
 
             } catch (error) {
                 console.log(error);
