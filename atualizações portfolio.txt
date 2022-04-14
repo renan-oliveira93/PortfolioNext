@@ -1,0 +1,10 @@
+(11) 95901-6334 OU (11) 2266-5522 -> inserir mascara no telefone, se possível diferenciar fixo-cel
+
+se possível, validar o campo de e-mail e telefone
+
+alter cor das bordaaasss!!!
+
+atualizar a pagina puxando pra baixo
+
+
+

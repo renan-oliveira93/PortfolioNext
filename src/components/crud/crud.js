@@ -83,7 +83,7 @@ export default function CrudUsuarios() {
         e.preventDefault();
         if (!validForm()) return
         try {
-            await axios.put(`/api/usuarios/${id}`, { name, email, telefone })
+            await axios.put(`../api/usuarios/${id}`, { name, email, telefone })
             setUsuarios(usuarios.map(usuario => usuario._id === id ? { name, email, telefone, _id: id } : usuario))
             setName('')
             setEmail('')
