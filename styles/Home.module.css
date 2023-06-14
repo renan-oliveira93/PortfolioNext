@@ -439,4 +439,8 @@
   .tecnologias_component {
     display: none;
   }
+
+  .footer {
+    margin-top: 7rem;
+  }
 }
